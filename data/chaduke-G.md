@@ -20,4 +20,11 @@ change codeOrigin, store, fundingCycleStore, prices, pricingCurrency, pricingDec
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L233
 check !=0 is cheaper than checking 
 change 240 to :  if (_pricing.tiers.length != 0) _store.recordAddTiers(_pricing.tiers);
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L202
+First of all, change *memory _mintReservesForTiersData* to *calldata _mintReservesForTiersData* to save gas since the argument will never be updated. Second, no need to cache it to *_data* in 273, read each field from *_mintReservesForTiersData* directly to save gas.
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L290
+First of all, change *memory _mintForTiersData* to *calldata _mintForTiersData* to save gas since the argument will never be updated. Second, no need to cache it to *_data* in 300, read each field from *_mintForTiersData* directly to save gas.
+
     
