@@ -16,3 +16,6 @@ Consider combing the two mappings into one mapping from address->uint256->struct
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L216-L218
 use custom error revert instead of *require* without an error msg
 
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/abstract/JB721Delegate.sol#L5
+projectId and directly can be changed to immutable if it will be assigned once by the *_initialize* function.
+
