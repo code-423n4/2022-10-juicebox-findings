@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "ladboy233",
+  "risk": "3",
+  "title": "User can mint more NFT than initial supply because of improper check of _storedTier.remainingQuantity in /JBTiered721DelegateStore#recordMint",
+  "issueId": 16,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/16"
+}
