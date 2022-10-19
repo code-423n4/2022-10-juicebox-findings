@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "chaduke",
+  "risk": "3",
+  "title": "Initialize: No access control for initializatino and possible multiple initializations",
+  "issueId": 15,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/15"
+}
