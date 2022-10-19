@@ -14,4 +14,10 @@ No need to cache it into _data, user the *_setTierDelegatesData* calldata variab
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JB721TieredGovernance.sol#L313
 change *_tier* to a calldata argument to save gas
 
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol
+change codeOrigin, store, fundingCycleStore, prices, pricingCurrency, pricingDecimals, creditsOf to immmutable or possiblly private too since they will set once by the constructor to save gas
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L233
+check !=0 is cheaper than checking 
+change 240 to :  if (_pricing.tiers.length != 0) _store.recordAddTiers(_pricing.tiers);
     
