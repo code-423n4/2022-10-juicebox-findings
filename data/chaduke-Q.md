@@ -16,6 +16,23 @@ Consider combing the two mappings into one mapping from address->uint256->struct
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L216-L218
 use custom error revert instead of *require* without an error msg
 
-https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/abstract/JB721Delegate.sol#L5
-projectId and directly can be changed to immutable if it will be assigned once by the *_initialize* function.
+I suggest to lock all solidity compiler versions for all files and use the most recent version
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/libraries/JBTiered721FundingCycleMetadataResolver.sol
+all the three functions can be simplified to save gas if these functions are called in other write transactions. 
+
+change
+        return (_data & 1) == 1;
+to 
+       return _data & 1;
+
+change 
+       return ((_data >> 1) & 1) == 1;
+to 
+       return (_data & 2) == 2;
+
+change
+         return ((_data >> 2) & 1) == 1;
+to 
+       return (_data  & 4) == 4;
 
