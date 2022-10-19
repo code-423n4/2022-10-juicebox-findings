@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "0xmuxyz",
+  "risk": "2",
+  "title": "Lack of access control modifier for initialize function",
+  "issueId": 20,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/20"
+}
