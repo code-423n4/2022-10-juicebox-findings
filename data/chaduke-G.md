@@ -57,4 +57,7 @@ _input can be changed to a calldata variable as it is never updated in the funct
 
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/libraries/JBIpfsDecoder.sol#L83
 _indices can be changed to a calldata variable as it is never updated in the function
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateStore.sol#L349
+change the forloop to iterate from zero to save the first assignment gas
  
