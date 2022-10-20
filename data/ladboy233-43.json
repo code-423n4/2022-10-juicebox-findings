@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "ladboy233",
+  "risk": "3",
+  "title": "Incorrect calculation of totalRedemptionWeight in JBTiered721DelegateStore.sol, we use weight + number of reserved token instead of weight + weight",
+  "issueId": 43,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/43"
+}
