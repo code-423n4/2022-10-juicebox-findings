@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "ladboy233",
+  "risk": "2",
+  "title": "The tier setting parameter are unsafely downcasted from type uint256 to type uint80 / uint48 / uint40 / uint16",
+  "issueId": 31,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/31"
+}
