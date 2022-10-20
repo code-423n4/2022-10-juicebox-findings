@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "ladboy233",
+  "risk": "3",
+  "title": "Owner can set contribution floor to 0 , meaning the user lose the fund / fee for 0 contribution power NFT and NFT have no redemption weight",
+  "issueId": 29,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/29"
+}
