@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "Lambda",
+  "risk": "2",
+  "title": "JB721TieredGovernance._moveTierDelegateVotes emitting wrong event",
+  "issueId": 60,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/60"
+}
