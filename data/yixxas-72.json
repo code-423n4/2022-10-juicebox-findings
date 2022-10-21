@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "yixxas",
+  "risk": "2",
+  "title": "Lack of sanity check for total number of tiers after adding new tiers can lead to malfunction of protocol",
+  "issueId": 72,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/72"
+}
