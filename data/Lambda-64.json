@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "Lambda",
+  "risk": "2",
+  "title": "Iterations over all tiers in recordMintBestAvailableTier can render system unusable",
+  "issueId": 64,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/64"
+}
