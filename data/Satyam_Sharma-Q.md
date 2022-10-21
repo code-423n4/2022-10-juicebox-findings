@@ -23,4 +23,4 @@ Make a address check on parameter _nft,_owner:
 
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateStore.sol#L307
 
-Make a check on _tokenId != 0: As here in this function it 'Return the tier for the specified token ID'. 
+Make a check on _tokenId != 0: As here in this function it 'Return the tier for the specified token ID'.  
