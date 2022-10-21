@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "yixxas",
+  "risk": "3",
+  "title": "Making a payment to the protocol with `_dontMint` parameter will result in lost fund for user.",
+  "issueId": 45,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/45"
+}
