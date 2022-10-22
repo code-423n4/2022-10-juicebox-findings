@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "ctf_sec",
+  "risk": "2",
+  "title": "NFT Owner can keep add new tiers to increase the NFT supply with no upper limit to dilute the redemption power of the NFT from old tiers",
+  "issueId": 95,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/95"
+}
