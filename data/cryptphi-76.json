@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "cryptphi",
+  "risk": "3",
+  "title": "didPay() receives payment but does not mint NFT to beneficiary as expected.",
+  "issueId": 76,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/76"
+}
