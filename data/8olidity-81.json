@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "8olidity",
+  "risk": "2",
+  "title": "If JBTiered721DelegateDeployer owner change, could lead to deploy JB721GlobalGovernance permissions lost by him",
+  "issueId": 81,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/81"
+}
