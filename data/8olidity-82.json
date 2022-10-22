@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "8olidity",
+  "risk": "2",
+  "title": "launchProjectFor() does not check the address of _owner",
+  "issueId": 82,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/82"
+}
