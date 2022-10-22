@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "cccz",
+  "risk": "3",
+  "title": "When _dontMint == true, creditsOf does not add _value ",
+  "issueId": 84,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/84"
+}
