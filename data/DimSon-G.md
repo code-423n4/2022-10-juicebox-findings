@@ -62,3 +62,33 @@ File: contracts/JBTiered721DelegateStore.sol    #7
 
 1091:        function recordBurn(uint256[] memory _tokenIds) external override {  
 ```
+
+## [G-02] Using `bool`s for storage incurs overhead
+
+Use `uint256(1)` and `uint256(2)` for true/false to avoid a Gwarmaccess ([100 gas](https://gist.github.com/IllIllI000/1b70014db712f8572a72378321250058)), and to avoid Gsset (20000 gas) when changing from 'false' to 'true', after having been 'true' in the past
+
+_There are 3 instance(s) of this issue:_
+
+[JBTiered721Delegate](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L543)
+
+```
+File: contracts/JBTiered721Delegate.sol    #1
+
+543:   bool _expectMintFromExtraFunds;
+```
+
+[JBTiered721Delegate](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L546)
+
+```
+File: contracts/JBTiered721Delegate.sol    #2
+
+546:   bool _dontOverspend; 
+```
+
+[JBTiered721Delegate](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L555)
+
+```
+File: contracts/JBTiered721Delegate.sol    #3
+
+555:   bool _dontMint;
+```
