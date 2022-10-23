@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "SaharAP",
+  "risk": "2",
+  "title": "A user can delegate his tire voting to a zero address",
+  "issueId": 228,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/228"
+}
