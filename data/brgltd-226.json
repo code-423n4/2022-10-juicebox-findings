@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "brgltd",
+  "risk": "2",
+  "title": "# Potential unbounded loops in `JBTiered721DelegateStore`",
+  "issueId": 226,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/226"
+}
