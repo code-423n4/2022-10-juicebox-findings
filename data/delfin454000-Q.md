@@ -1,3 +1,20 @@
+## QA Report low
+
+### Missing checks for address(0x0) when assigning values to address state variables
+Checks are missing for all three variables below:
+
+[JBTiered721DelegateDeployer.sol: L51-53](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateDeployer.sol#L51-L53)
+```solidity
+    globalGovernance = _globalGovernance;
+    tieredGovernance = _tieredGovernance;
+    noGovernance = _noGovernance;
+```
+___
+___
+
+
+## QA Report: non-critical
+
 ### Typos
 ___
 [JBTiered721DelegateDeployer.sol: L132](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateDeployer.sol#L132)
