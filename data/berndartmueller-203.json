@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "berndartmueller",
+  "risk": "3",
+  "title": "Minting a token within the best available tier will revert with an `Out of Gas` EVM error if no tiers are given",
+  "issueId": 203,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/203"
+}
