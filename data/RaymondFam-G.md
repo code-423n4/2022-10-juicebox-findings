@@ -146,3 +146,11 @@ https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a66495
                _reservedTokenBeneficiaryOf[msg.sender][_tierId] = _tierToAdd.reservedTokenBeneficiary;
             }
 ```
+## Non-strict inequalities are cheaper than strict ones
+In the EVM, there is no opcode for non-strict inequalities (>=, <=) and two operations are performed (> + = or < + =). As an example, consider replacing >= with the strict counterpart > in the following line of code:
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateStore.sol#L903
+
+```
+      if (_storedTierOf[msg.sender][_tierId].lockedUntil > block.timestamp - 1) revert TIER_LOCKED();
+```
