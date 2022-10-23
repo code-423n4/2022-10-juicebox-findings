@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "Aymen0909",
+  "risk": "2",
+  "title": "`deployDelegateFor` should revert if `_deployTiered721DelegateData.owner == address(0)`",
+  "issueId": 159,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/159"
+}
