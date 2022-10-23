@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "0x52",
+  "risk": "3",
+  "title": "JBTiered721DelegateStore#totalRedemtionWeight contains critical tierID mismatch",
+  "issueId": 105,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/105"
+}
