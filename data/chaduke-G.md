@@ -60,4 +60,6 @@ _indices can be changed to a calldata variable as it is never updated in the fun
 
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateStore.sol#L349
 change the forloop to iterate from zero to save the first assignment gas
+
+At the end of B721TieredGovernenance, the *_add* and *_subtract* functions are not necessary, simply using SafeMath or compiler version > 8.0  will take care of overflow/underflow issues, and if that is not a concern, simply used unchecked{}.
  
