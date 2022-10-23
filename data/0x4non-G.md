@@ -250,3 +250,19 @@ testJBTieredNFTRewardDelegate_adjustTiers_revertIfEmptyQuantity(uint8,uint8) (ga
 testJBTieredNFTRewardDelegate_didPay_mintBestTierIfNonePassed(uint8) (gas: 1887 (1.003%)) 
 Overall gas change: -855175 (-9.518%)
 ```
+
+
+## Update Openzeppellin contract to latest version to save around 1%
+Change vesion from 4.6.0 to 4.7.3
+` @openzeppelin/contracts  ^4.6.0  →  ^4.7.3`
+
+```
+testRedeemAll() (gas: 0 (0.000%)) 
+testRedeemToken(uint16) (gas: 0 (0.000%)) 
+testMintAndTransferGlobalVotingUnits(uint8,bool) (gas: 1914 (0.021%)) 
+testMintAndTransferTieredVotingUnits(uint8,bool) (gas: 3827 (0.042%)) 
+testJBTieredNFTRewardDelegate_adjustTiers_revertIfAddingWithVotingPower(uint8,uint8) (gas: -27362 (-0.336%)) 
+testJBTieredNFTRewardDelegate_adjustTiers_revertIfAddingWithReservedRate(uint8,uint8) (gas: -27593 (-0.339%)) 
+testJBTieredNFTRewardDelegate_adjustTiers_revertIfEmptyQuantity(uint8,uint8) (gas: -30019 (-0.369%)) 
+Overall gas change: -79233 (-0.981%)
+```
