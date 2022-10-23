@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "Trust",
+  "risk": "2",
+  "title": "Deactivated tiers can still mint reserve tokens, even if no non-reserve tokens were minted. ",
+  "issueId": 189,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/189"
+}
