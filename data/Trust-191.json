@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "Trust",
+  "risk": "3",
+  "title": "Reserved token rounding can be abused to honeypot and steal user's funds",
+  "issueId": 191,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/191"
+}
