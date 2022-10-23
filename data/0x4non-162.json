@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "0x4non",
+  "risk": "2",
+  "title": "`_safeMint()` should be used rather than `_mint()`, or NFTs may be lost (missing _safeMint implementation)",
+  "issueId": 162,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/162"
+}
