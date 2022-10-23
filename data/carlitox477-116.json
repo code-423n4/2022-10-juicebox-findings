@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "carlitox477",
+  "risk": "2",
+  "title": "JB721Delegate#initialize _fundingCycleStore lack of zero address check can lead to redeployment",
+  "issueId": 116,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/116"
+}
