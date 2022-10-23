@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "0xSmartContract",
+  "risk": "2",
+  "title": "Very critical `Owner` privileges can cause damage of the project in a possible privateKey exploit",
+  "issueId": 215,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/215"
+}
