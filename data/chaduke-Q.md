@@ -7,6 +7,9 @@ One suggestion is to use custom error Revert to process exception in most write 
 
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JB721TieredGovernance.sol#L177
 
+Use a locked version of solidity compiler for all contracts
+
+
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JB721TieredGovernance.sol#L177
 Suggest to change function *setTierDelegate* to external if it will not be called by the contract itself
 
