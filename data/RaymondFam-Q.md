@@ -19,3 +19,36 @@ https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a66495
 The delete key better conveys the intention and is also more idiomatic. Consider replacing assignments of zero with delete statements. Here is one of the instances entailed:
 
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateStore.sol#L1198
+
+## `block.timestamp` Unreliable
+The use of `block.timestamp` as part of the time checks can be slightly altered by miners/validators to favor them in contracts that have logic strongly dependent on them.
+
+Consider taking into account this issue and warning the users that such a scenario could happen. If the alteration of timestamps cannot affect the protocol in any way, consider documenting the reasoning and writing tests enforcing that these guarantees will be preserved even if the code changes in the future.
+
+Here is one of the instances entailed:
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateStore.sol#L903
+
+## Events Associated With Setter Functions
+Consider having events associated with setter functions emit both the new and old values instead of just the new value. Here are some of the few instances entailed:
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L370-L423
+
+## Sanity Checks
+Zero address checks should be implemented at the constructor to avoid accidental error(s) that could result in non-functional calls associated with it or in the worst scenario a redeployment of contract when it concerns an immutable variable. For instance, the following code block may be rewritten as:
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateProjectDeployer.sol#L47-L54
+
+```
+  constructor(
+    IJBController _controller,
+    IJBTiered721DelegateDeployer _delegateDeployer,
+    IJBOperatorStore _operatorStore
+  ) JBOperatable(_operatorStore) {
+    if (address(_controller) == address(0) || address(_delegateDeployer) == address(0) || address(_operatorStore) == address(0))
+        revert ADDRESS_ZERO();
+    controller = _controller;
+    delegateDeployer = _delegateDeployer;
+  }
+```
+Note: The custom error may have to be added at the top of the contract.
