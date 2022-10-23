@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "berndartmueller",
+  "risk": "2",
+  "title": "The tier reserved rate is not validated and can surpass `JBConstants.MAX_RESERVED_RATE`",
+  "issueId": 201,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/201"
+}
