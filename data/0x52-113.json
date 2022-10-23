@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "0x52",
+  "risk": "3",
+  "title": "Minting and redeeming will break for fully minted tiers with reserveRate != 0 and reserveRate/MaxReserveRate tokens burned",
+  "issueId": 113,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/113"
+}
