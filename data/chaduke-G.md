@@ -63,3 +63,8 @@ change the forloop to iterate from zero to save the first assignment gas
 
 At the end of B721TieredGovernenance, the *_add* and *_subtract* functions are not necessary, simply using SafeMath or compiler version > 8.0  will take care of overflow/underflow issues, and if that is not a concern, simply used unchecked{}.
  
+For function *payParams* in contract *JB721Delegate*, the returned value *delegateAllocations* has no dependency on the input, the function can be simplified to save gas
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/abstract/JB721Delegate.sol#L203
+change _name and _symbol to calldata to save gas for the *_initialize* function
+
