@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "berndartmueller",
+  "risk": "2",
+  "title": "The `JBTiered721DelegateStore.tiers` function will return `_size` number of tiers even if no tiers exist",
+  "issueId": 200,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/200"
+}
