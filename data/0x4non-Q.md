@@ -6,6 +6,7 @@
 On [JBTiered721Delegate.sol#L224](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L224) you should revert if `_store` is `address(0)`
 On [JBTiered721DelegateProjectDeployer.sol#L52](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateProjectDeployer.sol#L52) you should revert if `_controller` is `address(0)`
 On [JBTiered721DelegateProjectDeployer.sol#L53](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721DelegateProjectDeployer.sol#L53) you should revert if `_delegateDeployer` is `address(0)`
+On [JBTiered721DelegateProjectDeployer.sol#L71](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1/contracts/JBTiered721DelegateProjectDeployer.sol#L71)  you should revert if `_owner` is `address(0)`
 
 
 ## Check for valid `pricingDecimals` threshold
