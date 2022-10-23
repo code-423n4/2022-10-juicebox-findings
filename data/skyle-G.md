@@ -25,4 +25,7 @@ JBIpfsDecoder.sol
   Ln 76 for (uint256 i = 0; i < _input.length; i++) {
   Ln 84 for (uint256 i = 0; i < _indices.length; i++) {
 
+[G-04] DIVISION BY TWO SHOULD USE BIT SHIFTING
+JBBitmap.sol
+  Ln74    return _index / 256;
 
