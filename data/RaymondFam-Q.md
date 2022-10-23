@@ -12,6 +12,7 @@ Lines in source code are typically limited to 80 characters, but it’s reasonab
 
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/abstract/JB721Delegate.sol#L70
 https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/abstract/JB721Delegate.sol#L242
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L198
 
 ## Use `delete` to Clear Variables
 `delete a` assigns the initial value for the type to `a`. i.e. for integers it is equivalent to `a = 0`, but it can also be used on arrays, where it assigns a dynamic array of length zero or a static array of the same length with all elements reset. For structs, it assigns a struct with all members reset. Similarly, it can also be used to set an address to zero address. It has no effect on whole mappings though (as the keys of mappings may be arbitrary and are generally unknown). However, individual keys and what they map to can be deleted: If `a` is a mapping, then `delete a[x]` will delete the value stored at x.
@@ -52,3 +53,27 @@ https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a66495
   }
 ```
 Note: The custom error may have to be added at the top of the contract.
+
+## Missing Require Error Message
+Consider adding a less than 32 character string message to all require statements just so that a relevant message would be displayed in the event of a revert. Here are some of the instances entailed:
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L216-L218
+
+## Add a Timelock to Critical Parameter Change
+It is a good practice to give time for users to react and adjust to critical changes with a mandatory time window between them. The first step merely broadcasts to users that a particular change is coming, and the second step commits that change after a suitable waiting period. This allows users that do not accept the change to withdraw within the grace period. A timelock provides more guarantees and reduces the level of trust required, thus decreasing risk for users. It also indicates that the project is legitimate (less risk of a malicious Owner making any malicious or ulterior intention). Specifically, privileged roles could use front running to make malicious changes just ahead of incoming transactions, or purely accidental negative effects could occur due to the unfortunate timing of changes. Here are some of the instances entailed:
+
+https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/JBTiered721Delegate.sol#L370-L423
+
+## Contract Owner Has Too Many Privileges
+The owner of the contracts has too many privileges relative to standard users. The consequence is disastrous if the contract owner's private key has been compromised. And, in the event the key was lost or unrecoverable, no implementation upgrades and system parameter updates will ever be possible.
+
+For a Juicebox Project project this grand, it increases the likelihood that the owner will be targeted by an attacker, especially given the insufficient protection on sensitive owner private keys. The concentration of privileges creates a single point of failure; and, here are some of the incidents that could possibly transpire:
+
+1. Change new owner by invoking `_transferOwnership()` to hijack the entire protocol.
+2. Mess up with critical state variables, e.g. `beneficiary`, `baseUri`, `contractUri`, `tokenUriResolver` etc.
+
+Consider:
+1) splitting privileges (e.g. via the multisig option) to ensure that no one address has excessive ownership of the system,
+2) clearly documenting the functions and implementations the owner can change,
+3) documenting the risks associated with privileged users and single points of failure, and
+4) ensuring that users are aware of all the risks associated with the system.
