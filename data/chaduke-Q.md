@@ -57,5 +57,21 @@ Then define a mapping(address => NFTContractInfo)
 This is just an example, the authors can define several structs as well, to group related variables in one struct, for example. 
 
  
+It might be helpful to refactor all custom erros into one file and import in each contract.
 
-
+Maybe it is a good idea to unify the concepts of JB721Tier and JBStored721Tier to avoid the conversion between them back and forth. Much code looks like this:
+```
+JB721Tier({
+        id: _id,
+        contributionFloor: _storedTier.contributionFloor,
+        lockedUntil: _storedTier.lockedUntil,
+        remainingQuantity: _storedTier.remainingQuantity,
+        initialQuantity: _storedTier.initialQuantity,
+        votingUnits: _storedTier.votingUnits,
+        reservedRate: _storedTier.reservedRate,
+        reservedTokenBeneficiary: reservedTokenBeneficiaryOf(_nft, _id),
+        encodedIPFSUri: encodedIPFSUriOf[_nft][_id],
+        allowManualMint: _storedTier.allowManualMint
+      });
+which wastes much gas.
+```
