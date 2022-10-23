@@ -1,0 +1,8 @@
+{
+  "contest": 172,
+  "handle": "minhquanym",
+  "risk": "3",
+  "title": "Beneficiary loses credit when specifying payment with flag `_dontMint = true`",
+  "issueId": 157,
+  "issueUrl": "https://github.com/code-423n4/2022-10-juicebox-findings/issues/157"
+}
