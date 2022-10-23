@@ -43,14 +43,6 @@ Line 48:    uint8 digitlength = 1;
 
 [Line 48](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/libraries/JBIpfsDecoder.sol#L48)
 
-## Limit Revert Strings Length To 32 Characters
-Revert strings cost more gas to deploy if the string is larger than 32 bytes.
-Revert strings exceeding 32 bytes include instances:
-
-```
-Line 31:    string memory ipfsHash = _toBase58(completeHexString);
-```
-[Line 31](https://github.com/jbx-protocol/juice-nft-rewards/blob/f9893b1497098241dd3a664956d8016ff0d0efd0/contracts/libraries/JBIpfsDecoder.sol#L31)
 
 
 ## Functions With Access Control Cheaper if Payable
