@@ -1,3 +1,11 @@
+---
+sponsor: "Juicebox"
+slug: "2022-10-juicebox"
+date: "2023-01-09"
+title: "Juicebox contest"
+findings: "https://github.com/code-423n4/2022-10-juicebox-findings/issues"
+contest: 172
+---
 
 # Overview
 
