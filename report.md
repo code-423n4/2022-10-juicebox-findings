@@ -25,18 +25,18 @@ During the audit contest outlined in this document, C4 conducted an analysis of 
   2. 0x4non
   3. 0x52
   4. 0x5rings
-  5. [0xNazgul](https://twitter.com/0xNazgul)
-  6. [0xSmartContract](https://twitter.com/0xSmartContract)
+  5. [0xNazgul](https://code4rena.com/@0xNazgul)
+  6. [0xSmartContract](https://code4rena.com/@0xSmartContract)
   7. Awesome
-  8. [Aymen0909](https://github.com/Aymen1001)
+  8. [Aymen0909](https://code4rena.com/@Aymen0909)
   9. BClabs (nalus and Reptilia)
   10. Bnke0x0
   11. CodingNameKiki
   12. Diana
   13. DimSon
-  14. [JC](https://twitter.com/sm4rtcontr4ct)
-  15. [Jeiwan](https://jeiwan.net)
-  16. [JrNet](https://twitter.com/JagadeshRonanki)
+  14. [JC](https://code4rena.com/@JC)
+  15. [Jeiwan](https://code4rena.com/@Jeiwan)
+  16. [JrNet](https://code4rena.com/@JrNet)
   17. Lambda
   18. LeoS
   19. RaoulSchaffranek
@@ -44,55 +44,55 @@ During the audit contest outlined in this document, C4 conducted an analysis of 
   21. RedOneN
   22. ReyAdmirado
   23. Rolezn
-  24. [SaharAP](https://twitter.com/SAPanahloo)
+  24. [SaharAP](https://code4rena.com/@SaharAP)
   25. Saintcode\_
-  26. Shinchan ([Sm4rty](https://twitter.com/Sm4rty_), [prasantgupta52](https://twitter.com/prasantgupta52) and [Rohan16](https://twitter.com/rohan16___))
-  27. [Trust](https://twitter.com/trust__90)
+  26. Shinchan ([Sm4rty](https://code4rena.com/@Sm4rty), [prasantgupta52](https://code4rena.com/@prasantgupta52) and [Rohan16](https://code4rena.com/@Rohan16))
+  27. [Trust](https://code4rena.com/@Trust)
   28. V\_B (Barichek and vlad\_bochok)
   29. \_\_141345\_\_
-  30. [a12jmx](https://twitter.com/a12jmx)
-  31. [berndartmueller](https://twitter.com/berndartmueller)
-  32. [bharg4v](https://twitter.com/Bharg4v)
+  30. [a12jmx](https://code4rena.com/@a12jmx)
+  31. [berndartmueller](https://code4rena.com/@berndartmueller)
+  32. [bharg4v](https://code4rena.com/@bharg4v)
   33. brgltd
-  34. [carlitox477](https://twitter.com/CAA1994)
+  34. [carlitox477](https://code4rena.com/@carlitox477)
   35. cccz
   36. ch0bu
   37. chaduke
   38. cloudjunky
   39. cryptostellar5
   40. cryptphi
-  41. [csanuragjain](https://twitter.com/csanuragjain)
+  41. [csanuragjain](https://code4rena.com/@csanuragjain)
   42. d3e4
   43. delfin454000
   44. emrekocak
   45. erictee
-  46. [fatherOfBlocks](https://twitter.com/father0fBl0cks)
-  47. [gogo](https://www.linkedin.com/in/georgi-nikolaev-georgiev-978253219)
-  48. [hansfriese](https://twitter.com/hansfriese)
-  49. [ignacio](https://twitter.com/0xheynacho)
-  50. [joestakey](https://twitter.com/JoeStakey)
+  46. [fatherOfBlocks](https://code4rena.com/@fatherOfBlocks)
+  47. [gogo](https://code4rena.com/@gogo)
+  48. [hansfriese](https://code4rena.com/@hansfriese)
+  49. [ignacio](https://code4rena.com/@ignacio)
+  50. [joestakey](https://code4rena.com/@joestakey)
   51. karanctf
   52. ladboy233
   53. lukris02
-  54. [martin](https://github.com/martin-petrov03)
+  54. [martin](https://code4rena.com/@martin)
   55. mcwildy
-  56. [minhquanym](https://www.linkedin.com/in/minhquanym/)
+  56. [minhquanym](https://code4rena.com/@minhquanym)
   57. minhtrng
   58. peanuts
-  59. [ret2basic](https://twitter.com/ret2basic)
+  59. [ret2basic](https://code4rena.com/@ret2basic)
   60. sakman
-  61. [seyni](https://twitter.com/seynixyz)
+  61. [seyni](https://code4rena.com/@seyni)
   62. slowmoses
-  63. [svskaushik](https://twitter.com/svs_kaushik)
+  63. [svskaushik](https://code4rena.com/@svskaushik)
   64. tnevler
   65. trustindistrust
   66. yixxas
-  67. [zishansami](https://zishansami102.github.io/)
+  67. [zishansami](https://code4rena.com/@zishansami)
 
 
-This contest was judged by [Picodes](https://twitter.com/thePicodes).
+This contest was judged by [Picodes](https://code4rena.com/@Picodes).
 
-Final report assembled by [CloudEllie](https://twitter.com/CloudEllie1).
+Final report assembled by [CloudEllie](https://code4rena.com/@CloudEllie).
 
 # Summary
 
@@ -108,9 +108,7 @@ The code under review can be found within the [C4 Juicebox contest repository](h
 
 # Severity Criteria
 
-C4 assesses the severity of disclosed vulnerabilities according to a methodology based on [OWASP standards](https://owasp.org/www-community/OWASP_Risk_Rating_Methodology).
-
-Vulnerabilities are divided into three primary risk categories: high, medium, and low/non-critical.
+C4 assesses the severity of disclosed vulnerabilities based on three primary risk categories: high, medium, and low/non-critical.
 
 High-level considerations for vulnerabilities span the following key areas when conducting assessments:
 
@@ -119,7 +117,7 @@ High-level considerations for vulnerabilities span the following key areas when 
 - Arithmetic
 - Gas use
 
-Further information regarding the severity criteria referenced throughout the submission review process, please refer to the documentation provided on [the C4 website](https://code4rena.com).
+For more information regarding the severity criteria referenced throughout the submission review process, please refer to the documentation provided on [the C4 website](https://code4rena.com), specifically our section on [Severity Categorization](https://docs.code4rena.com/awarding/judging-criteria/severity-categorization).
 
 # High Risk Findings (5)
 
@@ -1558,3 +1556,6 @@ C4 is an open organization governed by participants in the community.
 C4 Contests incentivize the discovery of exploits, vulnerabilities, and bugs in smart contracts. Security researchers are rewarded at an increasing rate for finding higher-risk issues. Contest submissions are judged by a knowledgeable security researcher and solidity developer and disclosed to sponsoring developers. C4 does not conduct formal verification regarding the provided code but instead provides final verification.
 
 C4 does not provide any guarantee or warranty regarding the security of this project. All smart contract software should be used at the sole risk and responsibility of users.
+
+Please note: Code4rena is an organization that puts learning at the forefront of everything we do. Our rules and processes continue to develop over time, and older reports may reflect previous iterations of these rules and processes. For a more current representation of Code4rena's severity standardization rules and comprehensive judging criteria, we recommend browsing the reports from C4's most recent contests.
+  
